@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Funciones</h1>
+    <script>
+
+function test1(x, y) {
+return y - x; // no se pueden hacer operaciones
+}
+test1(10, 40);  //aqui no se ejecutara por que esta fuera del return
+//-----------------------
+function test2(x, y) { //no funciona por que presenta 2 paramentros y trabaja solo un y hay 2 return
+return x * 2; // no se hacen operaciones
+console.log(x);
+return x / 2;
+}
+test2(10);
+
+
+// Una función que se llame triplicador que tome un número como input (osea,
+// como Parámetro) y retorne el triple de ese valor
+
+    function triplicador(num) {
+        const result = num * 3
+        return result
+    }
+
+//     Una función multiplicador que tome dos números como Parámetros y
+// devuelva el producto de los dos.
+
+function multiplicador(num1, num2){
+    const result= num1*num2
+    return result
+}
+
+// Una función división que tome dos números como Parámetros y devuelva el
+// resultado de dividir el primero por el segundo.
+function division(num1, num2){
+    const result= num1/num2
+    return result
+}
+
+//Una función resto que tome dos números como Parámetros y devuelva el resultado del módulo del primero sobre el segundo.
+function resto(num1, num2){
+    const result= num1 % num2
+    return result
+}
+
+// Por último, calcula el valor de triplicar 5, luego multiplicar eso por 12, dividir por 12
+// y encontrar el resto de dividir eso en 3.
+
+
+// function multiple(num) {
+//         const result = ((num * 5) *12)/12
+//         return result
+//     } 
+
+
+    function todo() {
+        let result = triplicador(5)
+        result = multiplicador(result, 12)
+        result = division(result, 12)
+        result = resto(result, 3)
+        return result
+    }
+    console.log(todo())
+    
+//Importante: Use solamente las funciones que escribiste antes, sin otros operadores.
+
+
+
+
+    </script>
+</body>
+</html>
